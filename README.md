@@ -1,55 +1,65 @@
-Customer Churn Risk Analytics for a Subscription Business
+Subscription Revenue Protection: Churn Risk & Customer Retention Analytics
 Overview
 
-This project analyzes customer churn risk in a subscription-based business and translates predictive insights into executive-ready decisions.
+Subscription businesses lose significant revenue when customers churn without early warning.
 
-The work combines SQL analytics, machine learning, and business intelligence to identify high-risk customers, quantify revenue exposure, and recommend targeted retention actions.
+This project delivers a churn risk analytics system that identifies at-risk customers, estimates revenue exposure, and provides actionable insights to improve retention.
 
-All data used in this project is simulated for portfolio demonstration.
+The solution combines SQL, machine learning, and business intelligence to support data-driven decision-making at an executive level.
 
 Business Problem
 
-Customer churn directly impacts revenue and long-term growth.
+Customer churn impacts:
 
-The goal of this project is to:
+Revenue stability
 
-Identify customers with elevated churn risk
+Customer lifetime value (CLV)
 
-Understand the main behavioral and acquisition drivers of churn
+Acquisition efficiency
 
-Quantify revenue exposure from potential churn
+Key challenges:
 
-Deliver insights in a format suitable for executive decision-making
+Limited visibility into churn risk
 
-Solution Summary
+Difficulty identifying high-value customers at risk
 
-The project follows an end-to-end analytics workflow:
+No clear estimate of revenue exposure
 
-Simulated realistic subscription, transaction, and customer data
+Solution
 
-Built analytics tables using SQL in BigQuery
+This project builds an end-to-end system that:
 
-Engineered churn-related behavioral features
+Predicts customer churn probability
 
-Trained a supervised churn prediction model
+Segments customers into actionable risk groups
 
-Scored customers with churn probabilities
+Identifies high-value customers at risk
 
-Segmented customers into actionable risk groups
+Estimates potential revenue loss
 
-Delivered insights via a Power BI executive dashboard and one-page PDF summary
+Delivers insights through an executive dashboard
 
-Key Outputs
+Key Insights
 
-Customer churn probability scores
+Over 27% of customers fall into high-risk churn segments
 
-Risk segmentation (Low, Medium, High)
+High-value customers are present within this group, increasing revenue exposure
 
-Revenue exposure analysis
+Low engagement and irregular payment behavior strongly correlate with churn
 
-Channel-level churn insights
+Acquisition channels such as Paid Ads and Organic Search show higher churn concentration
 
-Executive dashboard and summary report
+Business Impact
+
+This solution enables businesses to:
+
+Identify and prioritize high-risk customers early
+
+Protect revenue by focusing on high-value users
+
+Improve retention strategies using data insights
+
+Evaluate acquisition channels based on churn quality
 
 Tech Stack
 
@@ -59,7 +69,8 @@ Python (pandas, scikit-learn)
 
 Power BI
 
-Google Colab 
+Google Colab
+
 Modeling Approach
 
 Binary classification for churn prediction
@@ -74,30 +85,30 @@ Revenue contribution
 
 Acquisition channel
 
-Probability-based scoring instead of hard labels
+Probability-based scoring (not just classification)
 
-Risk segmentation based on churn probability thresholds
+Risk segmentation using churn probability thresholds
 
-Business Impact
-
-This analysis enables:
-
-Early identification of at-risk customers
-
-Targeted retention strategies
-
-Reduced revenue loss from preventable churn
-
-Data-driven evaluation of acquisition channels
+Project Structure
+churn-risk-analytics/
+│
+├── data/                  # Raw and processed data
+├── notebooks/             # Python analysis & modeling
+├── sql/                   # BigQuery SQL scripts
+├── dashboard/             # Power BI files
+├── images/                # Dashboard screenshots
+├── churn_executive_summary.pdf
+└── README.md
 
 Notes
 
-This project uses simulated data.
+Data used is simulated for demonstration
 
-Focus is placed on business insight and decision support rather than model complexity.
-
-Outputs are designed for executive and stakeholder consumption.
+Focus is on business insight and decision support
 
 Author
+
 Imeobong Monday
 Data Scientist | Analytics | Machine Learning | BI
+
+GitHub: https://github.com/ImeMonday
